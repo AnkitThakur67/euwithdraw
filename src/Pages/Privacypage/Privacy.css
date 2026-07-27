@@ -1,0 +1,129 @@
+body {
+  background: var(--soft);
+}
+.legal-header {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+.legal-shell {
+  width: min(820px, calc(100% - 36px));
+  margin: auto;
+}
+.legal-nav {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.legal-nav > a:last-child {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--violet);
+}
+.legal-page {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: var(--small-shadow);
+  padding: 50px;
+  margin-block: 60px;
+}
+.legal-page > :last-child {
+  margin-bottom: 0;
+} 
+.legal-page h1 {
+  font-size: 42px;
+  letter-spacing: -0.05em;
+  margin: 14px 0;
+}
+.legal-page .updated {
+  color: #8b91a0;
+  font-size: 11px;
+  margin-bottom: 38px;
+}
+.legal-page h2 {
+  font-size: 20px;
+  margin: 20px 0 12px;
+}
+.legal-page p,
+.legal-page li {
+  color: #5f687c;
+  line-height: 1.75;
+  font-size: 13px;
+}
+.legal-page a {
+  color: var(--violet);
+  text-decoration: underline;
+}
+.legal-page .notice {
+  background: #f4f2ff;
+  border: 1px solid #dfdcff;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+.support-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 30px 0;
+}
+.support-card {
+  border: 1px solid var(--line);
+  padding: 20px;
+  border-radius: 13px;
+}
+.support-card strong {
+  display: block;
+  margin-bottom: 6px;
+}
+.support-card p {
+  margin: 0;
+}
+@media (max-width: 650px) {
+  .legal-shell {
+    width: calc(100% - 24px);
+  }
+  .legal-nav {
+    height: 66px;
+  }
+  .legal-nav .brand span:last-child {
+    display: none;
+  }
+  .legal-nav > a:last-child {
+    font-size: 11px;
+  }
+  .legal-page {
+    padding: 28px 21px;
+    margin-block: 40px;
+    border-radius: 18px;
+  }
+  .legal-page h1 {
+    font-size: 34px;
+    line-height: 1.08;
+  }
+  .legal-page .updated {
+    margin-bottom: 28px;
+  }
+  .legal-page h2 {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+  .legal-page p,
+  .legal-page li {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .legal-page ul,
+  .legal-page ol {
+    padding-left: 20px;
+  }
+  .legal-page .notice {
+    padding: 15px;
+  }
+  .support-cards {
+    grid-template-columns: 1fr;
+  }
+  .support-card {
+    padding: 18px;
+  }
+}
