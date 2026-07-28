@@ -29,7 +29,7 @@ function Footer() {
     <footer>
       <div className="footer-main section-shell">
         <div>
-          <Link className="brand footer-brand" to="/">
+          <Link className="brand footer-brand" to="/#top">
             <img className="brand-logo" src={LogoWhite} alt="EU Withdraw" />
           </Link>
           <p>Withdrawal operations for Shopify stores.</p>
